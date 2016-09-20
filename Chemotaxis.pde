@@ -9,5 +9,12 @@
  }  
  class Bacteria    
  {     
- 	//lots of java!   
+ 	//lots of java!
+ 	Bacteria()
+ 	{
+ 		int myColor, myX, myY;
+ 		myColor = (int)(Math.random)*256; // <<< needs work <<<
+ 		myX = x;
+ 		myY = y;
+ 	}  
  }    
