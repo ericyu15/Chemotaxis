@@ -1,12 +1,11 @@
  //declare bacteria variables here   
- Bacteria otto;
- int j = 0;
+ Bacteria [] otto;
  void setup()   
  {     
  	//initialize bacteria variables here  
  	size(300,300);
  	noStroke(); 
- 	otto = new Bacteria[j];
+ 	otto = new Bacteria[i];
  	for(int i = 0; i < otto.length; i = i + 1)
  	{
  		otto[i] = new Bacteria();
@@ -21,7 +20,6 @@
  }  
  void mousePressed()
  {
- 	j = j + 1;
  	redraw();
  }
  class Bacteria    
