@@ -5,7 +5,7 @@
  	//initialize bacteria variables here  
  	size(300,300);
  	noStroke(); 
- 	otto = new Bacteria[i];
+ 	otto = new Bacteria[5];
  	for(int i = 0; i < otto.length; i = i + 1)
  	{
  		otto[i] = new Bacteria();
