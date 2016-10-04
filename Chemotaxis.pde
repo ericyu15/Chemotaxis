@@ -3,9 +3,9 @@
  void setup()   
  {     
  	//initialize bacteria variables here  
- 	size(300,300);
+ 	size(500,500);
  	noStroke(); 
- 	otto = new Bacteria[5];
+ 	otto = new Bacteria[999];
  	for(int i = 0; i < otto.length; i = i + 1)
  	{
  		otto[i] = new Bacteria();
@@ -14,22 +14,28 @@
  void draw()   
  {    
  	//move and show the bacteria  
- 	background(255);
- 	otto.show(); 
- 	otto.move();
+ 	background(0);
+ 	for(int i = 0; i < otto.length; i = i + 1)
+ 	{
+ 		otto[i].show(); 
+ 		otto[i].move();
+ 	}
  }  
  void mousePressed()
  {
- 	redraw();
+ 	for(int i = 0; i < otto.length; i = i + 1)
+ 	{
+ 		otto[i] = new Bacteria();
+ 	}
  }
  class Bacteria    
  {     
  	//lots of java!
  	int myX, myY, myColor;
- 	Bacteria(int x,int y)
+ 	Bacteria()
  	{
- 		myX = x;
- 		myY = y;
+ 		myX = 250;
+ 		myY = 250;
  		myColor = (int)(Math.random()*256);
  	}
  	void show()
